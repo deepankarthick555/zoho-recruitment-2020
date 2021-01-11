@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int row, col, i, j;
+
+    printf("Enter number of row: ");
+    scanf("%d", &row);
+    printf("Enter number of column: ");
+    scanf("%d", &col);
+
+    for(i=1; i<=row; i++)
+    {
+        for(j=col; j>col-i; j--)
+        {
+            printf("%d", j);
+        }
+
+        for(j=1; j<=col-i; j++)
+        {
+            printf("%d", (row - i + 1));
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
